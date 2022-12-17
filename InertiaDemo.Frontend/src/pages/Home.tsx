@@ -1,19 +1,18 @@
 import { Navigation } from '../components/Navigation';
 
-
 export interface IHomeProps {
-    controller: {
-        title: string;
-    }
+  controller: {
+    title: string;
+  };
 }
 
 const Home = ({ controller }: IHomeProps) => {
-    return (
-        <>
-            <Navigation />
-            <p>{controller.title}</p>
-        </>
-    );
-}
+  return (
+    <>
+      <Navigation />
+      <p>{controller.title}</p>
+    </>
+  );
+};
 
 export default Home;
