@@ -38,13 +38,5 @@ public static class AssetManifest
         public List<string>? Entrypoints { get; set; }
     }
 
-    public static string GetPath(string file)
-    {
-        if (_manifest is null)
-        {
-            return file;
-        }
-
-        return _manifest.Files?[file] ?? file;
-    }
+    public static string GetPath(string file) => _manifest?.Files?[file] ?? file;
 }
