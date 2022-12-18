@@ -1,8 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InertiaDemo.Frontend", "InertiaDemo.Frontend\InertiaDemo.Frontend.csproj", "{A9B659D8-033F-4195-83F3-76EBD8347B37}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InertiaDemo.Backend", "InertiaDemo.Backend\InertiaDemo.Backend.csproj", "{A9961380-5720-4025-BF79-9597580E95E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9C357AD-B341-4C0E-B924-2B6AA058F047}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
