@@ -1,15 +1,22 @@
 @using InertiaAdapter
+@using InertiaDemo.Backend.Views
+@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inertia</title>
+    <environment include="Production">
+        <script defer="defer" src="@AssetManifest.GetPath("main.js")"></script>
+        <link rel="stylesheet" href="@AssetManifest.GetPath("main.css")">
+    </environment>
 </head>
 <body>
 @Inertia.Html(Model)
 
-<!-- reference your js file. -->
-<script src="/static/js/bundle.js"></script>
+<environment exclude="Production">
+    <script src="/static/js/bundle.js"></script>
+</environment>
 </body>
 </html>

@@ -2,6 +2,7 @@ using InertiaAdapter.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using InertiaDemo.Backend.Data;
+using InertiaDemo.Backend.Views;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,6 +36,7 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.UseAssetManifest();
 
 app.UseRouting();
 
