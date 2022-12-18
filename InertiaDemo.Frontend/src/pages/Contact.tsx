@@ -1,4 +1,5 @@
 import { Inertia } from '@inertiajs/inertia';
+import { Navigation } from '../components/Navigation';
 
 const Contact = () => {
   const handleSubmit = (event: any) => {
@@ -12,6 +13,7 @@ const Contact = () => {
 
   return (
     <>
+      <Navigation />
       <p>Contact</p>
       <form onSubmit={handleSubmit}>
         <label>

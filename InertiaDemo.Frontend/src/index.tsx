@@ -4,7 +4,7 @@ import { createInertiaApp } from '@inertiajs/inertia-react';
 import './index.css';
 
 createInertiaApp({
-  resolve: (name) => require(`./pages/${name}`),
+  resolve: (name) => import(`./pages/${name}`),
   setup({ el, App, props }) {
     const root = createRoot(el);
     root.render(
