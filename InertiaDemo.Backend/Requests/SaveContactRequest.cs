@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace InertiaDemo.Backend.Requests;
 
 public class SaveContactRequest
 {
-    public string Name { get; set; }
-    public string Message { get; set; }
+    public string Name { get; set; } = null!;
+
+    public string Message { get; set; } = null!;
 }
