@@ -4,5 +4,5 @@
  */
 
 export interface AboutDto {
-  title: string | null | undefined;
+    title: string | null;
 }

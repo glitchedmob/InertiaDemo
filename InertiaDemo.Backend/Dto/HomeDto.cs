@@ -5,5 +5,6 @@ namespace InertiaDemo.Backend.Dto;
 [ExportTsInterface]
 public class HomeDto
 {
-    public string Title { get; set; } = null!;
+    [TsNull]
+    public string? Title { get; set; }
 }

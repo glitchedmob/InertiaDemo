@@ -32,6 +32,6 @@ In this mode only a single server is running, the ASP.NET server, which is the o
 
 We've included a package, [Typegen](https://typegen.readthedocs.io/en/latest/index.html), in .NET that will automatically create typescript interfaces from C# classes.
 Examples of how to include a C# class for generation is in the `Dtos` folder in the backend project. To generate the types, first ensure you have the [Typegen cli](https://www.nuget.org/packages/dotnet-typegen) installed.
-Then run `dotnet build` and `dotnet typegen generate` in the `InertiaDemo.Backend`.
+Then run `dotnet typegen generate` in the `InertiaDemo.Backend`.
 
 There is a config file for Typegen, `InertiaDemo.Backend/tgconfig.json`. This files specifies where to output the typescript files as well as some customizations to the generation.

@@ -4,5 +4,5 @@
  */
 
 export interface HomeDto {
-  title: string | null | undefined;
+    title: string | null;
 }
