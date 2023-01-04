@@ -24,7 +24,7 @@ public class HomeController : Controller
     [HttpGet("about")]
     public IActionResult About()
     {
-        return Inertia.Render("About", new { title = "About" });
+        return Inertia.Render("About", new AboutDto { Title = "About" });
     }
 
     

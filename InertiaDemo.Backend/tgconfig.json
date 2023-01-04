@@ -1,3 +1,5 @@
 {
-    "outputPath": "../InertiaDemo.Frontend/src/types/dtos"
+    "outputPath": "../InertiaDemo.Frontend/src/types/dtos",
+    "csAllowNullsForAllTypes": true,
+    "csNullableTranslation": "null|undefined"
 }

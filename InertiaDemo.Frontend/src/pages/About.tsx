@@ -1,18 +1,14 @@
 import { Navigation } from '../components/Navigation';
+import { page } from '../utils/page';
+import type { AboutDto } from '../types/dtos/about-dto';
 
-export interface IAboutProps {
-  controller: {
-    title: string;
-  };
-}
-
-const About = ({ controller }: IAboutProps) => {
+const About = page<AboutDto>(({ title }) => {
   return (
     <>
       <Navigation />
-      <p>{controller.title}</p>
+      <p>{title}</p>
     </>
   );
-};
+});
 
 export default About;

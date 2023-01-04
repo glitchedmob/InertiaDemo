@@ -1,18 +1,14 @@
 import { Navigation } from '../components/Navigation';
+import { page } from '../utils/page';
+import type { HomeDto } from '../types/dtos/home-dto';
 
-export interface IHomeProps {
-  controller: {
-    title: string;
-  };
-}
-
-const Home = ({ controller }: IHomeProps) => {
+const Home = page<HomeDto>(({ title }) => {
   return (
     <>
       <Navigation />
-      <p>{controller.title}</p>
+      <p>{title}</p>
     </>
   );
-};
+});
 
 export default Home;
