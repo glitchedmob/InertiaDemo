@@ -8,13 +8,13 @@ public static class AssetManifest
     private static ManifestFile? _manifest;
 
 
-    public static IApplicationBuilder UseAssetManifest(this IApplicationBuilder builder)
+    public static IApplicationBuilder UseAssetManifest(this IApplicationBuilder app)
     {
-        var environment = builder.ApplicationServices.GetService<IWebHostEnvironment>();
+        var environment = app.ApplicationServices.GetService<IWebHostEnvironment>();
 
         if (environment is null)
         {
-            return builder;
+            return app;
         }
 
         try
@@ -26,7 +26,7 @@ public static class AssetManifest
         {
         }
 
-        return builder;
+        return app;
     }
 
     private class ManifestFile
