@@ -1,5 +1,6 @@
 ﻿using InertiaAdapter;
 using InertiaDemo.Backend.Data;
+using InertiaDemo.Backend.Dto;
 using InertiaDemo.Backend.Models;
 using InertiaDemo.Backend.Requests;
 using Microsoft.AspNetCore.Mvc;
@@ -17,7 +18,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return Inertia.Render("Home", new { title = "Home" });
+        return Inertia.Render("Home", new HomeDto { Title = "Home"});
     }
     
     [HttpGet("about")]
